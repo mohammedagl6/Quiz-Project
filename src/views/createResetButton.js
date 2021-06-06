@@ -7,7 +7,7 @@ const createResetButton = () => {
   const resetButton = createDOMElement('button');
   addClass(resetButton, 'reset-button');
   resetButton.addEventListener('click', resetTheQuiz);
-  resetButton.innerText = 'Reset the quiz';
+  resetButton.innerText = 'Start Over';
   return resetButton;
 };
 

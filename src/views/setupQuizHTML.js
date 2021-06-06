@@ -48,7 +48,8 @@ const setupQuizHTML = () =>{
   addClass(skipButton, 'btn');
   addClass(skipButton, 'skip_question-btn');
   skipButton.addEventListener('click', skipThisQuestion);
-  skipQuestion.appendChild(skipText).appendChild(skipButton);
+  skipQuestion.appendChild(skipText);
+  skipQuestion.appendChild(skipButton);
   quizContainer.appendChild(skipQuestion);
   
   return quizContainer;
