@@ -53,7 +53,7 @@ const setupLandingPage = (questionsNO, secondsNO) => {
   `;
   contentContainer.appendChild(dropdownHeading);
   numberOFQuestionsContainer.appendChild(questionsDropdown);
-  contentContainer.appendChild(numberOFQuestionsContainer);
+  
 
   const numberOFSecondsContainer = createDOMElement('div');
   addClass(numberOFSecondsContainer, 'seconds_menu');
@@ -63,9 +63,15 @@ const setupLandingPage = (questionsNO, secondsNO) => {
   <option value="15" ${secondsNO == 15 ? 'selected' : ''}>15 Seconds</option>
   <option value="20" ${secondsNO == 20 ? 'selected' : ''}>20 Seconds</option>
   `;
-  // numberOFSecondsContainer.appendChild(secondsDropdownTitle);
+  
   numberOFSecondsContainer.appendChild(secondsDropdown);
-  contentContainer.appendChild(numberOFSecondsContainer);
+  
+
+  const difficultyContainer = createDOMElement('div');
+  addClass(difficultyContainer, 'difficulty');
+  difficultyContainer.appendChild(numberOFQuestionsContainer);
+  difficultyContainer.appendChild(numberOFSecondsContainer);
+  contentContainer.appendChild(difficultyContainer);
 
   contentContainer.appendChild(btnContainer);
   btnContainer.appendChild(startBtn);

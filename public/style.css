@@ -6,7 +6,7 @@
 .centered {
   text-align: center;
   color: #abacad;
-  width: 600px;
+  width: 750px;
 }
 
 /********************* Start landing-page ***************************/
@@ -30,13 +30,16 @@
 .content-container {
   border-top: 3px solid rgba(219, 83, 59, 1);
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
   animation: moveInTop 1s ease-out 0.5s;
   animation-fill-mode: both;
 }
-
+.difficulty{
+  display: flex;
+}
 .content-container h1 {
   font-family: 'Fredericka the Great', cursive;
   max-width: 35ch;
@@ -265,7 +268,7 @@ select:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #abacad;
+  /* border: 3px solid #abacad; */
   border-bottom: hidden;
   height: 100px;
   /* width: 600px; */
@@ -274,7 +277,7 @@ select:hover {
   margin: 0px;
   font-family: 'Changa One', cursive;
   /* background: rgb(42 41 41); */
-  box-shadow: 0 -13px 17px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 -13px 17px rgba(0, 0, 0, 0.2); */
 }
 .questions_list {
   /* background-color: rgb(42 41 41); */
@@ -286,12 +289,14 @@ select:hover {
   box-shadow: 0 9px 20px rgba(0, 0, 0, 0.4);
 }
 .questions_list-wrong {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(255, 0, 0, 0.788) 0px 10px 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, */
+    /* rgba(255, 0, 0, 0.788) 0px 10px 10px; */
+    box-shadow: red 0px 0px 25px;
 }
 .questions_list-correct {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 201, 17, 0.788) 0px 10px 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, */
+    /* rgba(0, 201, 17, 0.788) 0px 10px 10px; */
+    box-shadow: green 0px 0px 25px;
 }
 .questions_list li {
   padding: 10px;
@@ -416,16 +421,15 @@ select:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .result_img_container {
   position: absolute;
-  display: flex;
   justify-content: center;
   width: 400px;
   height: 400px;
-  margin: 10px;
-  padding: 10px;
+  left: calc( 50% - 200px );
 }
 
 .result-page img {
@@ -545,7 +549,7 @@ select:hover {
 
 
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 768px){
 	.centered{
 		width: 90%;
 	}
