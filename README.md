@@ -1,5 +1,5 @@
 
-[Deployed page to Quiz](https://hani-as.github.io/browser-quiz-project-starter/)
+[Demo](https://mohammedagl6.github.io/Quiz-Project/)
 
 # Getting Started
 
