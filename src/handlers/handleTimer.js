@@ -10,7 +10,7 @@ const handleTimer = (startTimer) => {
     
     
     clearInterval(timerInterval);
-    if(startTimer === true){
+    if(startTimer){
         const timerContainer = getDOMElement(TIMER_ID);
         let counter = quizData.numberOfSeconds;
         timerContainer.innerText = counter;
